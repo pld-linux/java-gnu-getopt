@@ -2,7 +2,7 @@ Summary:	Java getopt implementation
 Summary(pl):	Implementacja getopt w Javie
 Name:		gnu.getopt
 Version:	1.0.9
-Release:	0.1
+Release:	1
 License:	LGPL
 Group:		Development/Languages/Java
 Source0:	ftp://ftp.urbanophile.com/pub/arenn/software/sources/java-getopt-%{version}.tar.gz
@@ -12,8 +12,6 @@ BuildRequires:	jakarta-ant >= 1.5
 Requires:	jre
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
-%define		_javalibdir	%{_datadir}/java
 
 %description
 The GNU Java getopt classes support short and long argument parsing in
@@ -37,15 +35,14 @@ raporty o b³êdach, a tak¿e pozytywnych do¶wiadczeniach.
 mv gnu/getopt/buildx.xml build.xml
 
 %build
-ant jar
-ant javadoc
+ant jar javadoc
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-install -d $RPM_BUILD_ROOT%{_javalibdir}
-cp build/lib/%{name}.jar $RPM_BUILD_ROOT%{_javalibdir}
-ln -sf %{name}.jar $RPM_BUILD_ROOT%{_javalibdir}/%{name}-%{version}.jar
+install -d $RPM_BUILD_ROOT%{_javadir}
+cp build/lib/%{name}.jar $RPM_BUILD_ROOT%{_javadir}
+ln -sf %{name}.jar $RPM_BUILD_ROOT%{_javadir}/%{name}-%{version}.jar
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -53,4 +50,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc gnu/getopt/README build/api
-%{_javalibdir}/*.jar
+%{_javadir}/*.jar
