@@ -7,7 +7,7 @@ License:	LGPL
 Group:		Development/Languages/Java
 Source0:	ftp://ftp.urbanophile.com/pub/arenn/software/sources/java-getopt-%{version}.tar.gz
 # Source0-md5:	ffbba007bb517dc42085d706ef7c0792
-URL:            http://www.urbanophile.com/arenn/hacking/download.htm
+URL:		http://www.urbanophile.com/arenn/hacking/download.htm
 BuildRequires:	jakarta-ant >= 1.5
 Requires:	jre
 BuildArch:	noarch
