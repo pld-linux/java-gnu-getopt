@@ -1,5 +1,5 @@
 Summary:	Java getopt implementation
-Summary(pl):	Implementacja getopt w Javie
+Summary(pl.UTF-8):   Implementacja getopt w Javie
 Name:		gnu.getopt
 Version:	1.0.9
 Release:	1
@@ -22,13 +22,13 @@ any bugs in this software, but there certainly could be some lying
 about. I would appreciate bug reports as well as hearing about
 positive experiences.
 
-%description -l pl
-Klasy GNU Java getopt potrafi± analizowaæ krótkie i d³ugie argumenty w
-sposób w 100% kompatybilny z wersj± GNU getopt z glibc 2.0.6 przy w
-wiêkszo¶ci kompatybilnym interfejsie programistycznym. Ten pakiet jest
-portem, a nie now± implementacj±. Autor nie zna ¿adnych b³êdów w tym
-oprogramowaniu, ale na pewno jakie¶ istniej±, wiêc bêdzie uznawa³
-raporty o b³êdach, a tak¿e pozytywnych do¶wiadczeniach.
+%description -l pl.UTF-8
+Klasy GNU Java getopt potrafiÄ… analizowaÄ‡ krÃ³tkie i dÅ‚ugie argumenty w
+sposÃ³b w 100% kompatybilny z wersjÄ… GNU getopt z glibc 2.0.6 przy w
+wiÄ™kszoÅ›ci kompatybilnym interfejsie programistycznym. Ten pakiet jest
+portem, a nie nowÄ… implementacjÄ…. Autor nie zna Å¼adnych bÅ‚Ä™dÃ³w w tym
+oprogramowaniu, ale na pewno jakieÅ› istniejÄ…, wiÄ™c bÄ™dzie uznawaÅ‚
+raporty o bÅ‚Ä™dach, a takÅ¼e pozytywnych doÅ›wiadczeniach.
 
 %prep
 %setup -q -c
