@@ -1,5 +1,5 @@
 Summary:	Java getopt implementation
-Summary(pl.UTF-8):   Implementacja getopt w Javie
+Summary(pl.UTF-8):	Implementacja getopt w Javie
 Name:		gnu.getopt
 Version:	1.0.9
 Release:	1
