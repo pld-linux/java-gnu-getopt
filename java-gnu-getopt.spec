@@ -9,6 +9,8 @@ Source0:	ftp://ftp.urbanophile.com/pub/arenn/software/sources/java-getopt-%{vers
 # Source0-md5:	ffbba007bb517dc42085d706ef7c0792
 URL:		http://www.urbanophile.com/arenn/hacking/download.htm
 BuildRequires:	ant >= 1.5
+BuildRequires:	jpackage-utils
+BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	jre
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -35,11 +37,10 @@ raporty o błędach, a także pozytywnych doświadczeniach.
 mv gnu/getopt/buildx.xml build.xml
 
 %build
-ant jar javadoc
+%ant jar javadoc
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 install -d $RPM_BUILD_ROOT%{_javadir}
 cp build/lib/%{name}.jar $RPM_BUILD_ROOT%{_javadir}
 ln -sf %{name}.jar $RPM_BUILD_ROOT%{_javadir}/%{name}-%{version}.jar
