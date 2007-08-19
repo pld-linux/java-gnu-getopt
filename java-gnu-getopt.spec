@@ -1,13 +1,13 @@
 Summary:	Java getopt implementation
 Summary(pl.UTF-8):	Implementacja getopt w Javie
 Name:		gnu.getopt
-Version:	1.0.9
+Version:	1.0.13
 Release:	1
 License:	LGPL
 Group:		Development/Languages/Java
 Source0:	ftp://ftp.urbanophile.com/pub/arenn/software/sources/java-getopt-%{version}.tar.gz
-# Source0-md5:	ffbba007bb517dc42085d706ef7c0792
-URL:		http://www.urbanophile.com/arenn/hacking/download.htm
+# Source0-md5:	46336d9bc055900f0320e5c378d7bfb2
+URL:		http://www.urbanophile.com/arenn/hacking/download.html
 BuildRequires:	ant >= 1.5
 BuildRequires:	jpackage-utils
 BuildRequires:	rpmbuild(macros) >= 1.300
