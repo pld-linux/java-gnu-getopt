@@ -1,11 +1,5 @@
 %bcond_without javadoc		# don't build apidocs
 
-%if "%{pld_release}" == "ti"
-%bcond_without java_sun		# build with gcj
-%else
-%bcond_with    java_sun		# build with java-sun
-%endif
-
 %include	/usr/lib/rpm/macros.java
 %define		srcname	gnu-getopt
 Summary:	Java getopt implementation
@@ -19,8 +13,7 @@ Source0:	ftp://ftp.urbanophile.com/pub/arenn/software/sources/java-getopt-%{vers
 # Source0-md5:	46336d9bc055900f0320e5c378d7bfb2
 URL:		http://www.urbanophile.com/arenn/hacking/download.html
 BuildRequires:	ant >= 1.5
-%{!?with_java_sun:BuildRequires:	java-gcj-compat-devel}
-%{?with_java_sun:BuildRequires:	java-sun}
+BuildRequires:	jdk
 BuildRequires:	jpackage-utils
 BuildRequires:	rpm-javaprov
 BuildRequires:	rpmbuild(macros) >= 1.300
