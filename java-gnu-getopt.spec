@@ -1,6 +1,5 @@
 %bcond_without javadoc		# don't build apidocs
 
-%include	/usr/lib/rpm/macros.java
 %define		srcname	gnu-getopt
 Summary:	Java getopt implementation
 Summary(pl.UTF-8):	Implementacja getopt w Javie
